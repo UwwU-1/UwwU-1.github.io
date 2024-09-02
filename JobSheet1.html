@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Praktikum 1</title>
+</head>
+<body>
+    <h1>Bunga Matahari</h1>
+
+    <p>Bunga matahari atau Helianthus annuus,
+       dikenal dengan kepala bunga besar yang berwarna kuning cerah dan kelopak 
+       yang mengelilingi pusat cokelat kehitaman. Tumbuhan ini tumbuh tegak dan 
+       tinggi, serta terkenal karena kemampuannya mengikuti arah matahari sepanjang hari. 
+       Keindahannya yang mencolok membuatnya menjadi simbol semangat dan keceriaan.
+    </p>
+
+    <i>Selain penampilannya yang menawan, bunga matahari terkenal 
+       karena heliotropisme, yaitu kemampuannya untuk mengikuti 
+       pergerakan matahari sepanjang hari. Keindahan dan keunikannya 
+       tidak hanya menambah warna pada lanskap, tetapi juga melambangkan 
+       semangat, keceriaan, dan energi positif.
+    </i>
+    <br><br>
+
+    <center>
+        <!-- Ini adalah gambar yang bisa diklik untuk memutar/menghentikan musik -->
+        <img src="bunga_matahari.jpeg" alt="Bunga Matahari" id="playButton" style="cursor:pointer;">
+    </center>
+    
+    <audio id="audioPlayer">
+        <source src="Sal Priadi - Gala Bunga Matahari (Official Music Video).mp3" type="audio/mpeg">
+        Browsermu tidak mendukung tag audio, upgrade donk!
+    </audio>
+    
+    <script>
+        var audio = document.getElementById("audioPlayer");
+        var playButton = document.getElementById("playButton");
+    
+        playButton.onclick = function() {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        };
+    </script>
+</body>
+</html>
